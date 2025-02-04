@@ -15,8 +15,13 @@ int main()
 {
   
     
-    int purchase = 95;
+    float purchase;
     
+    cout << "What was the total price of all the items bought by the customer? $";
+    cin >> purchase;
+    cout << fixed << setprecision(2) << purchase << endl;
+
+
     float statetax = 0.04;
     
     float countytax = 0.02;
@@ -29,7 +34,6 @@ int main()
     
     sum= (purchase +statetaxvalue + countytaxvalue);
 
-    cout << "The customer spent $" << purchase << " at the store." << endl;
     cout << "With the state sales tax and county sales tax the total came to be $" << sum << endl;
     cout << "   Reciept:" << endl;
     cout << "   Item Purchased: $" << purchase << endl;
